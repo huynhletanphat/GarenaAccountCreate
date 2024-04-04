@@ -10,9 +10,9 @@ const findskin = require("./src/api/findskin");
 
 const app = express();
 
-app.use("/api", showlast);
-app.use("/api", create);
-app.use("/api", findskin);
+app.use("/v1", showlast);
+app.use("/v1", create);
+app.use("/v1", findskin);
 
 app.listen(8080, () => {
   console.log("Server đang chạy trên cổng 8080!");
